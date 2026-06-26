@@ -1,0 +1,7 @@
+name: astrbot_plugin_spamguard
+display_name: 防刷屏卫士
+desc: "[仅 aiocqhttp] 独立的防刷屏插件，检测群友刷屏行为并自动撤回消息和禁言。配置灵活支持自定义时间窗口和消息数量阈值。"
+help: 本插件提供防刷屏功能，可配置在指定秒内发送超过指定数量的消息时自动撤回并禁言用户。
+version: v1.0.0
+author: Assistant
+astrbot_version: ">=4.24.2"

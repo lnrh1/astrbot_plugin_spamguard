@@ -1,0 +1,69 @@
+{
+  "spamming_count": {
+    "description": "刷屏检测阈值（消息数量）",
+    "hint": "在指定时间窗口内发送超过此数量的消息将被判定为刷屏",
+    "type": "int",
+    "slider": {
+      "min": 3,
+      "max": 20,
+      "step": 1
+    },
+    "default": 5
+  },
+  "spamming_window_seconds": {
+    "description": "刷屏检测时间窗口（秒）",
+    "hint": "统计消息的时间窗口长度，单位为秒",
+    "type": "int",
+    "slider": {
+      "min": 1,
+      "max": 60,
+      "step": 1
+    },
+    "default": 10
+  },
+  "spamming_ban_time": {
+    "description": "刷屏禁言时长（秒）",
+    "hint": "检测到刷屏后禁言用户的时长，设置为 0 表示不启用禁言功能但依然撤回消息",
+    "type": "int",
+    "slider": {
+      "min": 0,
+      "max": 600,
+      "step": 60
+    },
+    "default": 60
+  },
+  "delete_message_on_spam": {
+    "description": "检测到刷屏时撤回消息",
+    "hint": "开启后会撤回用户的所有刷屏消息（包括最后一条）",
+    "type": "bool",
+    "default": true
+  },
+  "recall_wait_seconds": {
+    "description": "撤回前等待时间（秒）",
+    "hint": "检测到刷屏后，等待多少秒再撤回消息，以便捕获更多并发消息。建议 0.3-1.0 秒",
+    "type": "float",
+    "slider": {
+      "min": 0.1,
+      "max": 3.0,
+      "step": 0.1
+    },
+    "default": 0.5
+  },
+  "recall_time_window_seconds": {
+    "description": "撤回消息时间窗口（秒）",
+    "hint": "撤回多少秒内发送的所有消息。例如设置为 5 表示撤回触发检测前 5 秒内的所有消息（含最后一条）",
+    "type": "int",
+    "slider": {
+      "min": 1,
+      "max": 30,
+      "step": 1
+    },
+    "default": 5
+  },
+  "admin_ids": {
+    "description": "管理员 QQ 列表",
+    "hint": "这些用户的消息不会被检测为刷屏，用空格分隔的 QQ 号",
+    "type": "string",
+    "default": ""
+  }
+}
