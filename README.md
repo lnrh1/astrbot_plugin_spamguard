@@ -188,22 +188,22 @@
 
 - **Q: 为什么插件不工作？**
 
-A: 请检查：
-1. Bot 是否具有群管理员权限
-2. 检查目标用户是否为管理员/群主
-3. 是否配置了 `admin_ids` 导致目标用户被豁免
-4. 查看 AstrBot 日志是否有错误信息
+    - A: 请检查：
+      1. Bot 是否具有群管理员权限
+      2. 检查目标用户是否为管理员/群主
+      3. 是否配置了 `admin_ids` 导致目标用户被豁免
+      4. 查看 AstrBot 日志是否有错误信息
 
 - **Q: 误判怎么办？**
 
-A: 可以：
-1. 增大 `spamming_count` 或 `spamming_window_seconds`
-2. 将频繁误判的用户加入 `admin_ids`
+    - A: 可以：
+      1. 增大 `spamming_count` 或 `spamming_window_seconds`
+      2. 将频繁误判的用户加入 `admin_ids`
 
 - **Q: 可以只撤回不禁言吗？**
 
-A: 可以，将 `spamming_ban_time` 设置为 0 即可。
+    - A: 可以，将 `spamming_ban_time` 设置为 0 即可。
 
 - **Q: 为什么有时候撤回不干净，会漏一两个？**
 
-A: 插件自身原因，目前正在排查和解决。
+    - A: 插件自身原因，目前正在排查和解决。
